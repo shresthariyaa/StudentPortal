@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Student</title>
+</head>
+<body>
+    {% extends "base.html" %}
+{% block content %}
+<h2>Add Student</h2>
+<form method="POST">
+    <div class="mb-3">
+        <label>Name</label>
+        <input type="text" name="name" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label>Age</label>
+        <input type="number" name="age" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label>Grade</label>
+        <input type="text" name="grade" class="form-control" required>
+    </div>
+    <button class="btn btn-success">Add Student</button>
+</form>
+{% endblock %}
